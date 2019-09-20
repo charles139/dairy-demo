@@ -1,0 +1,19 @@
+.item1 {grid-area: tech;}
+.item2 {grid-area: serv;}
+.item3 {grid-area: res;}
+.item4 {grid-area: empt;}
+.footer-wrapper {
+    display: grid;
+    grid-template-areas: 'tech serv res empt';
+    grid-gap: 10px;
+    background-color: #222;
+    padding: 10px;
+}
+.footer-wrapper h4 {
+    color: #999;
+}
+.footer-wrapper a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}

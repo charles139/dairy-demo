@@ -1,0 +1,28 @@
+<div class="header-wrapper">
+    <div class="header">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Blimling and Associates</a></li>
+            <li><a href="">Data Specialists, Inc</a></li>
+            <li><a href="">Dairy 101 Webinars</a></li>
+            <li (mouseover)="showSubMenu()">Login <span>&#709;</span></li>
+        </ul>
+        <ul *ngIf="subMenuIsOpen" class="sub-menu">
+            <li><a href="https://app.dairy.com/fusion/Moo?build=Login&forceLogout=true" target="_blank">Dairy.com</a></li>
+            <li><a href="https://members1.admis.com/Account/Login?ReturnUrl=%2f" target="_blank">ADM Investor Services</a></li>
+            <li><a href="https://apps.oaktrading.com/entry/" target="_blank">Oak Trading</a></li>
+        </ul>
+    </div>
+    <div id="sub-header" class="sub-header" [@openClose]="subHeaderIsOpen ? 'open' : 'close'">
+        <div class="logo-container">
+            <a [routerLink]=""><img src="../../../assets/transtlogo.png" alt="Dairy.com"></a>
+        </div>
+        <div class="sub-links">
+            <ul>
+                <li><a href="">TECHNOLOGY & SERVICES</a></li>
+                <li><a href="">MARKET PRICES</a></li>
+                <li><a href="">Company <span>&#709;</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
